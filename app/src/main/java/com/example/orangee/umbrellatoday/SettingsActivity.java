@@ -117,7 +117,7 @@ public class SettingsActivity extends AppCompatActivity {
                         Manifest.permission.INTERNET
                 }, 10);
             } else {
-                lManager.requestLocationUpdates("gps", 5000, 0, lListener);
+                lManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, lListener);
             }
         }
 

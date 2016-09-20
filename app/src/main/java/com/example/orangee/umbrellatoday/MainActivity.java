@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
         if(weatherlocation == null){
             weatherlocation = "oslo";
             db.updateOrInsert("location", weatherlocation);
+            db.updateOrInsert("gps_cords", "0");
         }
 
         service.refreshWeather(weatherlocation, context);
